@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+:root {
+  --text: #c7cfcc;
+  --bg: #090a14;
+
+  --accent-bg: #de9e41;
+  --accent-bg-hover: #e8c170;
+  --accent-border: #be772b;
+
+  --hidden-text: #202e37;
+
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: 'Chewy', cursive, sans-serif;
+  font-size: 24px;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+button {
+  color: var(--bg);
+  background-color: var(--accent-bg);
+  padding: 4px;
+  margin: 4px;
+  border-bottom: 2px solid var(--accent-border);
+  border-right: 2px solid var(--accent-border);
+  border-radius: 8px;
+  transition: all 150ms;
+}
+
+button:hover {
+  background-color: var(--accent-bg-hover);
+}
+
+button:active {
+  background-color: var(--accent-bg);
+}
+
+a {
+  color: #a53030;
+  transition: all 150ms;
+}
+
+a:hover {
+  color: #cf573c;
+}
